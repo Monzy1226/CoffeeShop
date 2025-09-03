@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kape Sa Bote - Menu</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">Kape Sa Bote</div>
+    <nav class="nav">
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="contact.html">CONTACT</a>
+      <a href="cart.html" class="cart-link" aria-label="Cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="cart-count" class="badge">0</span>
+      </a>
+    </nav>
+  </header>
+
+  <main class="section">
+    <h1 class="section-title">Our Menu</h1>
+
+    <h2 class="category">Coffee</h2>
+    <div class="grid">
+      <article class="card">
+        <div class="img-wrap"><img src="Cappucino.avif" alt="Cappuccino"></div>
+        <div class="card-body"><h3>Cappuccino</h3><p>₱140</p><button class="btn" onclick="addToCart('Cappuccino',140)">Add to Cart</button></div>
+      </article>
+      <article class="card">
+        <div class="img-wrap"><img src="Espresso.avif" alt="Espresso"></div>
+        <div class="card-body"><h3>Espresso</h3><p>₱110</p><button class="btn" onclick="addToCart('Espresso',110)">Add to Cart</button></div>
+      </article>
+      <article class="card">
+        <div class="img-wrap"><img src="Vanilla_Latte.avif" alt="Vanilla Latte"></div>
+        <div class="card-body"><h3>Vanilla Latte</h3><p>₱150</p><button class="btn" onclick="addToCart('Vanilla Latte',150)">Add to Cart</button></div>
+      </article>
+      <article class="card">
+        <div class="img-wrap"><img src="Caramel_Macchiato.avif" alt="Caramel Macchiato"></div>
+        <div class="card-body"><h3>Caramel Macchiato</h3><p>₱160</p><button class="btn" onclick="addToCart('Caramel Macchiato',160)">Add to Cart</button></div>
+      </article>
+    </div>
+
+    <h2 class="category">Non‑Coffee</h2>
+    <div class="grid">
+      <article class="card">
+        <div class="img-wrap"><img src="Matcha_Latte.avif" alt="Matcha Latte"></div>
+        <div class="card-body"><h3>Matcha Latte</h3><p>₱140</p><button class="btn" onclick="addToCart('Matcha Latte',140)">Add to Cart</button></div>
+      </article>
+      <article class="card">
+        <div class="img-wrap"><img src="Iced_Tea.avif" alt="Iced Tea"></div>
+        <div class="card-body"><h3>Iced Tea</h3><p>₱80</p><button class="btn" onclick="addToCart('Iced Tea',80)">Add to Cart</button></div>
+      </article>
+      <article class="card">
+        <div class="img-wrap"><img src="Lemonade.avif" alt="Lemonade"></div>
+        <div class="card-body"><h3>Lemonade</h3><p>₱85</p><button class="btn" onclick="addToCart('Lemonade',85)">Add to Cart</button></div>
+      </article>
+    </div>
+
+    <h2 class="category">Juices</h2>
+    <div class="grid">
+      <article class="card">
+        <div class="img-wrap"><img src="Orange_Juice.avif" alt="Orange Juice"></div>
+        <div class="card-body"><h3>Orange Juice</h3><p>₱90</p><button class="btn" onclick="addToCart('Orange Juice',90)">Add to Cart</button></div>
+      </article>
+      <article class="card">
+        <div class="img-wrap"><img src="Apple_Juice.avif" alt="Apple Juice"></div>
+        <div class="card-body"><h3>Apple Juice</h3><p>₱95</p><button class="btn" onclick="addToCart('Apple Juice',95)">Add to Cart</button></div>
+      </article>
+    </div>
+
+    <h2 class="category">Desserts</h2>
+    <div class="grid">
+      <article class="card">
+        <div class="img-wrap"><img src="Cheesecake.avif" alt="Cheesecake"></div>
+        <div class="card-body"><h3>Cheesecake</h3><p>₱150</p><button class="btn" onclick="addToCart('Cheesecake',150)">Add to Cart</button></div>
+      </article>
+      <article class="card">
+        <div class="img-wrap"><img src="Brownies.avif" alt="Brownies"></div>
+        <div class="card-body"><h3>Brownies</h3><p>₱110</p><button class="btn" onclick="addToCart('Brownies',110)">Add to Cart</button></div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">© 2025 Kape Sa Bote</footer>
+  <script src="script.js"></script>
+</body>
+</html>

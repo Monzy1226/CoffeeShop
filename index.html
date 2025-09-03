@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kape Sa Bote - Home</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">Kape Sa Bote</div>
+    <nav class="nav">
+      <a href="about.html">ABOUT</a>
+      <a href="menu.html">MENU</a>
+      <a href="contact.html">CONTACT</a>
+      <a href="cart.html" class="cart-link" aria-label="Cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="cart-count" class="badge">0</span>
+      </a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <h1>Freshly brewed. Lovingly served.</h1>
+      <p>Order your favorites online — Cash, GCash, or Online.</p>
+      <a href="menu.html" class="btn">See Menu</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Featured Favorites</h2>
+    <div class="grid">
+      <article class="card">
+        <div class="img-wrap">
+          <img src="Classic_Americano.avif" alt="Classic Americano"/>
+        </div>
+        <div class="card-body">
+          <h3>Classic Americano</h3>
+          <p>₱120</p>
+          <button class="btn" onclick="addToCart('Classic Americano',120)">Add to Cart</button>
+        </div>
+      </article>
+      <article class="card">
+        <div class="img-wrap">
+          <img src="Vanilla_Latte.avif" alt="Vanilla Latte"/>
+        </div>
+        <div class="card-body">
+          <h3>Vanilla Latte</h3>
+          <p>₱150</p>
+          <button class="btn" onclick="addToCart('Vanilla Latte',150)">Add to Cart</button>
+        </div>
+      </article>
+      <article class="card">
+        <div class="img-wrap">
+          <img src="Caramel_Macchiato.avif" alt="Caramel Macchiato"/>
+        </div>
+        <div class="card-body">
+          <h3>Caramel Macchiato</h3>
+          <p>₱160</p>
+          <button class="btn" onclick="addToCart('Caramel Macchiato',160)">Add to Cart</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <footer class="site-footer">© 2025 Cafe de Bote</footer>
+  <script src="script.js"></script>
+</body>
+</html>

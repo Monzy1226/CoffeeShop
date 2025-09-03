@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Cart - Kape Sa Bote</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">Kape Sa Bote</div>
+    <nav class="nav">
+      <a href="index.html">HOME</a>
+      <a href="menu.html">MENU</a>
+      <a href="about.html">ABOUT</a>
+      <a href="contact.html">CONTACT</a>
+      <a href="cart.html" class="cart-link" aria-label="Cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="cart-count" class="badge">0</span>
+      </a>
+    </nav>
+  </header>
+
+  <main class="section narrow">
+    <h1 class="section-title">Your Order</h1>
+    <ul id="cart-items" class="cart-list"></ul>
+    <div class="cart-summary">
+      <div>Subtotal: <strong>₱<span id="subtotal">0</span></strong></div>
+      <div id="delivery-fee-wrap" class="hidden">Delivery Fee: <strong>₱<span id="delivery-fee">0</span></strong></div>
+      <div class="total">Total: <strong>₱<span id="grand-total">0</span></strong></div>
+    </div>
+
+    <div class="controls">
+      <label>Payment:
+        <select id="payment">
+          <option>Cash</option>
+          <option>GCash</option>
+          <option>Online Ordering</option>
+        </select>
+      </label>
+      <button class="btn" id="checkout-btn">Checkout</button>
+    </div>
+  </main>
+
+  <div id="order-modal" class="modal hidden">
+    <div class="modal-card">
+      <button class="close" id="modal-close" aria-label="Close">×</button>
+      <h2>How would you like to get your order?</h2>
+      <div class="modal-actions">
+        <button class="btn outline" id="pickup-btn">Pick-Up</button>
+        <button class="btn" id="delivery-btn">Delivery</button>
+      </div>
+      <div id="delivery-form" class="delivery-form hidden">
+        <label>Distance (km): <input type="number" id="distance" min="1" step="1" value="1"/></label>
+        <small>Delivery fee is ₱10 per km.</small>
+        <button class="btn" id="confirm-delivery">Confirm</button>
+      </div>
+      <p id="modal-total" class="modal-total"></p>
+      <button class="btn full" id="place-order">Place Order</button>
+    </div>
+  </div>
+
+  <footer class="site-footer">© 2025 Cafe de Bote</footer>
+  <script src="script.js"></script>
+</body>
+</html>
