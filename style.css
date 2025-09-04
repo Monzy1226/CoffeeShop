@@ -17,7 +17,7 @@ a { text-decoration:none; color: inherit; }
 .badge { background:#e53935; color:#fff; border-radius:999px; font-size:12px; padding:2px 6px; position: relative; top: -1px; }
 
 .hero { min-height: 60vh; background: url('https://images.unsplash.com/photo-1517705008128-361805f42e86?q=80&w=1500&auto=format&fit=crop') center/cover no-repeat; display:grid; place-items:center; text-align:center; position:relative; }
-.hero::after { content:""; position:absolute; inset:0; background: linear-gradient(180deg, rgba(0,0,0,.45), rgba(0,0,0,.2)); }
+.hero::after { content:""; position:absolute; inset:0; background: linear-gradient(180deg, rgba(0,0,0,.45), rgba(0,0,0,.2)); pointer-events: none; }
 .hero-inner { position: relative; color:#fff; padding: 40px 16px; animation: fadeIn .8s ease both; }
 .hero h1 { font-size: clamp(28px, 4vw, 44px); margin: 0 0 10px; }
 .hero p { opacity:.95; margin: 0 0 18px; }
